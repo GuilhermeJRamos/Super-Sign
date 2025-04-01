@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "types": ["jest", "@testing-library/jest-dom"],
+    "esModuleInterop": true,
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    }
+  },
+  "include": [
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "jest.setup.js"
+  ]
+} 
